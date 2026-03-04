@@ -44,6 +44,7 @@ WITH extracted_table AS (
 ),
 
 -- 2. Aggregate: Do the math and the GROUP BY
+-- (e.g., HAVING / GROUP )
 agg_table AS (
   SELECT 
     column_1
@@ -52,7 +53,7 @@ agg_table AS (
   -- GROUP BY column_1
 ),
 
--- 3. Final: Apply post-aggregation business filters (e.g., HAVING or simple WHERE)
+-- 3. Final: Apply post-aggregation business filters WHERE)
 --      NULLIF the denominators
 final AS (
   SELECT * FROM agg_table
