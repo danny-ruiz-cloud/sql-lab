@@ -43,7 +43,7 @@ WITH extracted_table AS (
   */
 ),
 
--- 2. Aggregate: Do the math and the GROUP BY
+-- 2. Aggregate: Do the math and the agg functions
 -- (e.g., HAVING / GROUP )
 agg_table AS (
   SELECT 
